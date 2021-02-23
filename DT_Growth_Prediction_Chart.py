@@ -1,10 +1,10 @@
-#program for stock math with T+2 on cash account making percent_return a day with starting total
+#program for stock math with T+1 on cash account making percent_return a day with starting total
 while True:
     #initialize variables
     import sys
     percent_return = 1 + (int(input("Enter percent return:  ")) / 100)
-    starting_total = int(input("Enter starting total:  "))
-    day_counter = 2 + int(input("Enter start day:  "))
+    starting_total = float(input("Enter starting total:  "))
+    day_counter = 1 + int(input("Enter start day:  "))
     week_counter = int(input("Enter number of weeks:  "))
     day_trade_amount = int(starting_total / 2.5)
     profit = int(day_trade_amount * percent_return)
